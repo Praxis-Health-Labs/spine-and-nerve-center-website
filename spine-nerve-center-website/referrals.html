@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referrals | Spine and Nerve Center Riverview</title>
+    <meta name="description" content="Submit patient referrals to Spine and Nerve Center Riverview. Fax preferred at (866) 531-8530, or use our secure online referral form.">
+    
+    <!-- Tailwind CSS -->
+    <link href="assets/css/output.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+    
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 left-0 right-0 bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg z-50 transition-all duration-300" id="main-header">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-6">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <img src="assets/images/logos/sncr-white-logo.png" alt="Spine and Nerve Center Riverview" class="h-20 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8 xl:space-x-10">
+                    <a href="about.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">ABOUT</a>
+                    <a href="conditions.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">CONDITIONS</a>
+                    <a href="treatments.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">TREATMENTS</a>
+                    <div class="relative group">
+                        <button class="text-white hover:text-secondary-400 transition font-medium text-lg flex items-center">
+                            YOUR VISIT <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <!-- Enhanced Dropdown menu -->
+                        <div class="absolute top-full left-0 mt-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
+                                <div class="py-2">
+                                    <a href="new-patients.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium">
+                                        <i class="fas fa-user-plus mr-3 text-secondary-400 w-4"></i>
+                                        New Patients
+                                    </a>
+                                    <a href="forms.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium">
+                                        <i class="fas fa-file-medical mr-3 text-secondary-400 w-4"></i>
+                                        Patient Forms
+                                    </a>
+                                    <a href="insurance.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium">
+                                        <i class="fas fa-shield-alt mr-3 text-secondary-400 w-4"></i>
+                                        Insurance
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Dropdown arrow -->
+                            <div class="absolute -top-2 left-8 w-4 h-4 bg-white transform rotate-45 border-l border-t border-gray-100"></div>
+                        </div>
+                    </div>
+                    <a href="testimonials.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">TESTIMONIALS</a>
+                    <div class="relative group">
+                        <button class="text-white hover:text-secondary-400 transition font-medium text-lg flex items-center">
+                            CONTACT <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <!-- Enhanced Dropdown menu -->
+                        <div class="absolute top-full left-0 mt-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
+                                <div class="py-2">
+                                    <a href="contact.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium">
+                                        <i class="fas fa-envelope mr-3 text-secondary-400 w-4"></i>
+                                        Contact Us
+                                    </a>
+                                    <a href="location.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium">
+                                        <i class="fas fa-map-marker-alt mr-3 text-secondary-400 w-4"></i>
+                                        Location & Hours
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Dropdown arrow -->
+                            <div class="absolute -top-2 left-8 w-4 h-4 bg-white transform rotate-45 border-l border-t border-gray-100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="tel:8137411071" class="flex items-center justify-center w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200" aria-label="Call us">
+                        <i class="fas fa-phone text-white text-lg"></i>
+                    </a>
+                    <a href="appointments.html" class="bg-white text-primary-500 px-7 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-lg uppercase tracking-wide">
+                        Appointments
+                    </a>
+                </div>
+                
+                <!-- Mobile buttons -->
+                <div class="flex lg:hidden items-center gap-3">
+                    <a href="tel:8137411071" class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200" aria-label="Call us">
+                        <i class="fas fa-phone text-white text-lg"></i>
+                    </a>
+                    <button class="text-white" id="mobile-menu-button" aria-label="Menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-24 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-500">
+        <!-- Decorative elements -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-transparent"></div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-400/10 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
+                    Provider Referrals
+                </h1>
+                <p class="text-xl lg:text-2xl text-white/90 leading-relaxed">
+                    Refer your patients to our specialized pain management care
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referral Preference Callout -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Enhanced Fax Box with Strong Visual Appeal -->
+                <div class="bg-gradient-to-br from-secondary-400 to-secondary-500 rounded-2xl shadow-2xl p-8 lg:p-12 border-4 border-secondary-300 relative overflow-hidden">
+                    <!-- Decorative elements -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary-500/20 rounded-full blur-2xl"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                                    <i class="fas fa-fax text-4xl text-secondary-500"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow text-center lg:text-left">
+                                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                                    Preferred Referral Method: Fax
+                                </h2>
+                                <p class="text-lg text-white/95 mb-6">
+                                    For the fastest processing of referrals, we prefer that all referral documentation be faxed directly to our office.
+                                </p>
+                                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                                    <div class="bg-white px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200">
+                                        <p class="text-sm text-gray-600 mb-2 font-medium">FAX NUMBER:</p>
+                                        <p class="text-3xl font-bold text-primary-600">
+                                            <i class="fas fa-fax mr-3 text-2xl"></i>(866) 531-8530
+                                        </p>
+                                    </div>
+                                    <div class="text-white">
+                                        <p class="text-base font-medium">
+                                            <i class="fas fa-clock mr-2"></i>Available 24/7
+                                        </p>
+                                        <p class="text-sm opacity-90">for referrals</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Online Form Alternative Note -->
+                <div class="mt-8 bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                    <p class="text-gray-600 text-center text-lg">
+                        <i class="fas fa-laptop-medical mr-2 text-secondary-400"></i>
+                        If you prefer to submit a referral online, please use the comprehensive form below.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Referral Form Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="w-full max-w-6xl px-4 md:px-5 lg:px-5 mx-auto">
+            <div class="w-full bg-white rounded-2xl shadow-lg flex-col justify-start items-center gap-12 inline-flex">
+                <!-- Form Header -->
+                <div class="w-full px-8 pt-8 flex-col justify-start items-center gap-3 flex">
+                    <h2 class="text-center text-primary-500 text-4xl font-bold leading-normal">Online Referral Form for Providers</h2>
+                    <p class="text-center text-gray-500 text-base font-normal leading-relaxed">Please fill out all required fields for patient referral</p>
+                </div>
+
+                <div class="w-full px-8 pb-8 flex-col justify-start items-center gap-9 flex">
+                    <!-- Referring Provider Information -->
+                    <div class="w-full p-6 rounded-xl border border-gray-200 flex-col justify-start items-start gap-6 flex">
+                        <h4 class="text-primary-500 text-xl font-semibold leading-loose">Referring Provider Information</h4>
+                        <div class="w-full flex-col justify-center items-start gap-5 flex">
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Provider Name
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Dr. Jane Smith">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Practice/Facility Name
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Medical Center Name">
+                                </div>
+                            </div>
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Phone Number
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="(XXX) XXX-XXXX">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Fax Number
+                                    </label>
+                                    <input type="tel" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="(XXX) XXX-XXXX">
+                                </div>
+                            </div>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Email Address
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="provider@example.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Patient Information -->
+                    <div class="w-full p-6 rounded-xl border border-gray-200 flex-col justify-start items-start gap-6 flex">
+                        <h4 class="text-primary-500 text-xl font-semibold leading-loose">Patient Information</h4>
+                        <div class="w-full flex-col justify-center items-start gap-5 flex">
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        First Name
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="John">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Last Name
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Date of Birth
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="date" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Gender
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <select class="w-full h-11 px-4 py-2.5 text-sm font-normal text-gray-900 focus:outline-none border border-gray-300 rounded-lg shadow-sm focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all">
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Phone Number
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="(XXX) XXX-XXXX">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Email Address
+                                    </label>
+                                    <input type="email" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="patient@example.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insurance Information -->
+                    <div class="w-full p-6 rounded-xl border border-gray-200 flex-col justify-start items-start gap-6 flex">
+                        <h4 class="text-primary-500 text-xl font-semibold leading-loose">Insurance Information</h4>
+                        <div class="w-full flex-col justify-center items-start gap-5 flex">
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Primary Insurance Carrier
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Insurance Company Name">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Member ID
+                                        <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="ID Number">
+                                </div>
+                            </div>
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Group Number
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Group Number">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Insurance Phone
+                                    </label>
+                                    <input type="tel" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="(XXX) XXX-XXXX">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clinical Information -->
+                    <div class="w-full p-6 rounded-xl border border-gray-200 flex-col justify-start items-start gap-6 flex">
+                        <h4 class="text-primary-500 text-xl font-semibold leading-loose">Clinical Information</h4>
+                        <div class="w-full flex-col justify-center items-start gap-5 flex">
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-1 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Primary Diagnosis/Reason for Referral
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <textarea name="" rows="4" class="w-full resize-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Please describe the primary diagnosis and reason for referral"></textarea>
+                            </div>
+                            <div class="w-full justify-start items-center gap-5 flex sm:flex-row flex-col">
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        ICD-10 Code(s)
+                                    </label>
+                                    <input type="text" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Enter ICD-10 codes">
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                    <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                        Date of Injury/Onset
+                                    </label>
+                                    <input type="date" class="w-full h-11 focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all">
+                                </div>
+                            </div>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-1 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Current Medications
+                                </label>
+                                <textarea name="" rows="3" class="w-full resize-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="List current medications"></textarea>
+                            </div>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-1 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Previous Treatments Attempted
+                                </label>
+                                <textarea name="" rows="3" class="w-full resize-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Describe previous treatments"></textarea>
+                            </div>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-0.5 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Urgency Level
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full h-11 px-4 py-2.5 text-sm font-normal text-gray-900 focus:outline-none border border-gray-300 rounded-lg shadow-sm focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all">
+                                    <option value="">Select Urgency</option>
+                                    <option value="routine">Routine (2-4 weeks)</option>
+                                    <option value="urgent">Urgent (1 week)</option>
+                                    <option value="stat">STAT (24-48 hours)</option>
+                                </select>
+                            </div>
+                            <div class="w-full flex-col justify-center items-start gap-1 flex">
+                                <div class="w-full justify-start items-center gap-1 inline-flex">
+                                    <span class="text-gray-600 text-sm font-medium leading-snug">Upload Medical Records/Imaging</span>
+                                </div>
+                                <div class="w-full flex-col justify-start items-start gap-2.5 flex">
+                                    <label for="dropzone-file" class="flex flex-col items-center justify-center py-9 w-full border border-gray-300 border-dashed rounded-2xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-all">
+                                        <div class="mb-3 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <g id="Upload 02">
+                                                    <path id="icon" d="M16.296 25.3935L19.9997 21.6667L23.7034 25.3935M19.9997 35V21.759M10.7404 27.3611H9.855C6.253 27.3611 3.33301 24.4411 3.33301 20.8391C3.33301 17.2371 6.253 14.3171 9.855 14.3171V14.3171C10.344 14.3171 10.736 13.9195 10.7816 13.4326C11.2243 8.70174 15.1824 5 19.9997 5C25.1134 5 29.2589 9.1714 29.2589 14.3171H30.1444C33.7463 14.3171 36.6663 17.2371 36.6663 20.8391C36.6663 24.4411 33.7463 27.3611 30.1444 27.3611H29.2589" stroke="#44B4D6" stroke-width="1.6" stroke-linecap="round" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="text-center text-gray-400 text-xs font-normal leading-4 mb-1">PDF, DOC, DOCX, or images, smaller than 15MB</span>
+                                        <h6 class="text-center text-gray-900 text-sm font-medium leading-5">Drag and Drop your files here or 
+                                            <span class="text-secondary-400">Browse files</span>
+                                        </h6>
+                                        <input id="dropzone-file" type="file" class="hidden" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div class="w-full p-6 rounded-xl border border-gray-200 flex-col justify-start items-start gap-6 flex">
+                        <h4 class="text-primary-500 text-xl font-semibold leading-loose">Additional Information</h4>
+                        <div class="w-full flex-col justify-center items-start gap-5 flex">
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <label for="" class="flex gap-1 items-center text-gray-600 text-sm font-medium leading-snug">
+                                    Special Instructions or Notes
+                                </label>
+                                <textarea name="" rows="4" class="w-full resize-none focus:outline-none text-gray-900 placeholder-gray-400 text-sm font-normal leading-relaxed px-4 py-2.5 rounded-lg shadow-sm border border-gray-300 focus:border-secondary-400 focus:ring-2 focus:ring-secondary-100 transition-all" placeholder="Any additional information that would be helpful for the consultation"></textarea>
+                            </div>
+                            <div class="w-full flex-col justify-start items-start gap-3 flex">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" class="mt-1 w-5 h-5 text-secondary-400 border-gray-300 rounded focus:ring-secondary-400">
+                                    <span class="text-sm text-gray-600">Please send consultation notes back to referring provider</span>
+                                </label>
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" class="mt-1 w-5 h-5 text-secondary-400 border-gray-300 rounded focus:ring-secondary-400">
+                                    <span class="text-sm text-gray-600">Patient has been informed of this referral</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consent and Authorization -->
+                    <div class="w-full p-6 rounded-xl bg-blue-50 border border-blue-200 flex-col justify-start items-start gap-4 flex">
+                        <h4 class="text-primary-500 text-lg font-semibold">Authorization & Consent</h4>
+                        <div class="w-full flex-col justify-start items-start gap-3 flex">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="mt-1 w-5 h-5 text-secondary-400 border-gray-300 rounded focus:ring-secondary-400" required>
+                                <span class="text-sm text-gray-700">
+                                    I certify that the information provided is accurate and complete to the best of my knowledge. I authorize the release of medical information necessary for the evaluation and treatment of this patient.
+                                </span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="mt-1 w-5 h-5 text-secondary-400 border-gray-300 rounded focus:ring-secondary-400" required>
+                                <span class="text-sm text-gray-700">
+                                    I understand that submitting this form does not guarantee an appointment and that the patient or referring provider will be contacted to schedule an appointment.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="w-full justify-center items-center gap-4 flex sm:flex-row flex-col">
+                        <button type="submit" class="sm:w-auto w-full px-8 py-3 bg-secondary-400 hover:bg-secondary-500 transition-all duration-300 ease-in-out rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 justify-center items-center flex">
+                            <span class="text-white text-base font-semibold">Submit Referral</span>
+                        </button>
+                        <button type="button" class="sm:w-auto w-full group px-8 py-3 bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-in-out rounded-lg justify-center items-center flex">
+                            <span class="text-gray-700 text-base font-semibold">Clear Form</span>
+                        </button>
+                    </div>
+
+                    <!-- Form Note -->
+                    <div class="w-full text-center">
+                        <p class="text-sm text-gray-500">
+                            <i class="fas fa-lock mr-2 text-secondary-400"></i>
+                            This form is secure and HIPAA compliant. All information is encrypted during transmission.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 lg:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-secondary-500 via-secondary-400 to-primary-500"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-600/50 to-transparent"></div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-400/20 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-white">
+                Questions About Referrals?
+            </h2>
+            <p class="text-xl lg:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
+                Our referral coordinator is available to assist you with any questions about the referral process or to help expedite urgent cases.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:8137411071" class="inline-flex items-center justify-center bg-white text-primary-600 px-10 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 text-xl">
+                    <i class="fas fa-phone mr-3"></i> CALL OUR OFFICE
+                </a>
+                <a href="contact.html" class="inline-flex items-center justify-center bg-transparent text-white px-10 py-5 rounded-lg border-2 border-white hover:bg-white hover:text-primary-600 transition-all duration-200 font-semibold text-xl">
+                    CONTACT US
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black text-white relative">
+        <!-- Top decorative border -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 via-secondary-400 to-primary-500"></div>
+        
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Logo and Description -->
+                <div class="md:col-span-1">
+                    <img src="assets/images/logos/sncr-white-logo.png" alt="Spine and Nerve Center Riverview" class="h-16 w-auto mb-4">
+                    <p class="text-sm text-gray-400 mb-4 font-medium uppercase tracking-wider">Empowering Movement, Enhancing Wellness</p>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Board-certified pain management specialist providing advanced treatments for chronic pain conditions.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-300 hover:text-secondary-400 transition flex items-center group">
+                            <span class="w-1 h-1 bg-secondary-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition"></span>
+                            About Dr. Fura
+                        </a></li>
+                        <li><a href="conditions.html" class="text-gray-300 hover:text-secondary-400 transition flex items-center group">
+                            <span class="w-1 h-1 bg-secondary-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition"></span>
+                            Conditions We Treat
+                        </a></li>
+                        <li><a href="treatments.html" class="text-gray-300 hover:text-secondary-400 transition flex items-center group">
+                            <span class="w-1 h-1 bg-secondary-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition"></span>
+                            Treatment Options
+                        </a></li>
+                        <li><a href="testimonials.html" class="text-gray-300 hover:text-secondary-400 transition flex items-center group">
+                            <span class="w-1 h-1 bg-secondary-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition"></span>
+                            Patient Reviews
+                        </a></li>
+                        <li><a href="new-patients.html" class="text-gray-300 hover:text-secondary-400 transition flex items-center group">
+                            <span class="w-1 h-1 bg-secondary-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition"></span>
+                            New Patients
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4 text-white">Contact Info</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start group">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1 text-secondary-400 group-hover:text-secondary-300 transition"></i>
+                            <div>
+                                <p class="text-gray-300">13023 Summerfield Square Dr.</p>
+                                <p class="text-gray-300">Riverview, FL 33578</p>
+                            </div>
+                        </div>
+                        <a href="tel:8137411071" class="flex items-center text-gray-300 hover:text-secondary-400 transition group">
+                            <i class="fas fa-phone mr-3 text-secondary-400 group-hover:text-secondary-300 transition"></i>
+                            (813) 741-1071
+                        </a>
+                        <a href="mailto:contact@spinenervefl.com" class="flex items-center text-gray-300 hover:text-secondary-400 transition group">
+                            <i class="fas fa-envelope mr-3 text-secondary-400 group-hover:text-secondary-300 transition"></i>
+                            contact@spinenervefl.com
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Office Hours -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4 text-white">Office Hours</h3>
+                    <ul class="space-y-3 text-gray-300 mb-6">
+                        <li class="flex justify-between items-center pb-2 border-b border-gray-800">
+                            <span class="font-medium">Monday - Thursday:</span>
+                            <span>8:00 AM - 5:00 PM</span>
+                        </li>
+                        <li class="flex justify-between items-center pb-2 border-b border-gray-800">
+                            <span class="font-medium">Friday:</span>
+                            <span>8:00 AM - 3:00 PM</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="font-medium">Saturday - Sunday:</span>
+                            <span class="text-gray-400">Closed</span>
+                        </li>
+                    </ul>
+                    <a href="appointments.html" class="inline-block bg-secondary-400 text-white px-6 py-2.5 rounded-lg hover:bg-secondary-500 transition-all duration-200 font-medium text-center w-full">
+                        Schedule Online
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                        © 2025 Spine and Nerve Center Riverview. All Rights Reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-secondary-400 transition">Privacy Policy</a>
+                        <span class="text-gray-600">|</span>
+                        <a href="hipaa.html" class="text-gray-400 hover:text-secondary-400 transition">HIPAA Notice</a>
+                        <span class="text-gray-600">|</span>
+                        <a href="terms.html" class="text-gray-400 hover:text-secondary-400 transition">Terms of Service</a>
+                        <span class="text-gray-600">|</span>
+                        <a href="sitemap.html" class="text-gray-400 hover:text-secondary-400 transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden">
+        <div class="fixed inset-0 bg-black bg-opacity-50" id="mobile-menu-overlay"></div>
+        <div class="fixed right-0 top-0 h-full w-80 bg-gradient-to-b from-primary-500 to-primary-600 shadow-xl overflow-y-auto">
+            <div class="p-4 flex justify-between items-center border-b border-white/20">
+                <img src="assets/images/logos/sncr-white-logo.png" alt="Spine and Nerve Center Riverview" class="h-12 w-auto">
+                <button id="mobile-menu-close" class="text-white hover:text-secondary-400">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="px-4 py-6">
+                <a href="about.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">ABOUT</a>
+                <a href="conditions.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">CONDITIONS</a>
+                <a href="treatments.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">TREATMENTS</a>
+                <a href="your-visit.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">YOUR VISIT</a>
+                <a href="testimonials.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">TESTIMONIALS</a>
+                <a href="contact.html" class="block py-3 text-white hover:text-secondary-400 transition border-b border-white/10">CONTACT</a>
+                <div class="mt-6 space-y-3">
+                    <a href="tel:8137411071" class="block py-3 bg-white/20 hover:bg-white/30 text-white text-center rounded-lg transition font-semibold">
+                        <i class="fas fa-phone mr-2"></i> Call Now
+                    </a>
+                    <a href="appointments.html" class="block py-3 bg-white hover:bg-gray-100 text-primary-500 hover:text-primary-600 text-center rounded-lg transition font-semibold">
+                        Book Appointment
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Handle file upload display
+        document.getElementById('dropzone-file').addEventListener('change', function(e) {
+            const fileName = e.target.files[0]?.name;
+            if (fileName) {
+                const fileDisplay = document.createElement('p');
+                fileDisplay.className = 'text-sm text-gray-600 mt-2';
+                fileDisplay.textContent = `Selected: ${fileName}`;
+                e.target.parentElement.appendChild(fileDisplay);
+            }
+        });
+
+        // Form validation and submission
+        document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Add form validation logic here
+            alert('Referral form would be submitted here. In production, this would send to your backend.');
+        });
+
+        // Clear form button
+        document.querySelector('button[type="button"]').addEventListener('click', function() {
+            if (confirm('Are you sure you want to clear all form data?')) {
+                document.querySelectorAll('input, textarea, select').forEach(field => {
+                    if (field.type === 'checkbox') {
+                        field.checked = false;
+                    } else {
+                        field.value = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

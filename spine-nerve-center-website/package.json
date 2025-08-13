@@ -1,0 +1,12 @@
+{
+  "name": "spine-nerve-center-website",
+  "version": "1.0.0",
+  "description": "Spine and Nerve Center Riverview Website",
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css --watch",
+    "build": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
