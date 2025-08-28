@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    
+    <!-- Tailwind CSS -->
+    <link href="/assets/css/output.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS for carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- Custom styles -->
+    <style>
+        .step-number { background: linear-gradient(135deg, #44B4D6 0%, #074163 100%); }
+        .timeline-connector { background: linear-gradient(180deg, #44B4D6 0%, #074163 100%); }
+        .icon-gradient { background: linear-gradient(135deg, rgba(68, 180, 214, 0.1) 0%, rgba(7, 65, 99, 0.05) 100%); }
+        @keyframes pulse-ring { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+        .pulse-ring { animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    </style>
+</head>
+<body class="bg-white">
+    
+    {{> header}}
+
+    <!-- Main content area -->
+    {{{body}}}
+
+    {{> footer}}
+    
+    <!-- Mobile Menu -->
+    {{> mobile-menu}}
+    
+    <!-- Video Modal -->
+    <div id="video-modal" class="hidden fixed inset-0 z-[100] bg-black/80 items-center justify-center p-4 transition-opacity duration-300">
+        <div class="relative bg-black rounded-lg w-full max-w-4xl aspect-video">
+            <button id="close-video-modal" class="absolute -top-2 -right-2 md:-top-4 md:-right-4 h-10 w-10 bg-white/20 text-white text-3xl hover:bg-white/30 rounded-full flex items-center justify-center leading-none" aria-label="Close video player">&times;</button>
+            <video id="modal-video-player" class="w-full h-full rounded-lg" controls autoplay playsinline src=""></video>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Video Modal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoContainer = document.getElementById('video-container');
+            const playButton = document.getElementById('play-video-button');
+            const videoModal = document.getElementById('video-modal');
+            const closeModalButton = document.getElementById('close-video-modal');
+            const videoPlayer = document.getElementById('modal-video-player');
+
+            if (playButton && videoContainer) {
+                playButton.addEventListener('click', function() {
+                    const videoUrl = videoContainer.getAttribute('data-video-url');
+                    if (videoUrl && videoUrl.trim() !== '' && videoUrl !== '[VIDEO_S3_URL]') {
+                        videoPlayer.src = videoUrl;
+                        videoModal.classList.remove('hidden');
+                        videoModal.classList.add('flex');
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        playButton.style.display = 'none';
+                    }
+                });
+            }
+
+            function closeModal() {
+                videoModal.classList.add('hidden');
+                videoModal.classList.remove('flex');
+                videoPlayer.pause();
+                videoPlayer.src = '';
+                document.body.style.overflow = '';
+            }
+
+            if (closeModalButton) { 
+                closeModalButton.addEventListener('click', closeModal); 
+            }
+            if (videoModal) { 
+                videoModal.addEventListener('click', function(event) { 
+                    if (event.target === videoModal) { 
+                        closeModal(); 
+                    } 
+                }); 
+            }
+        });
+    </script>
+</body>
+</html>

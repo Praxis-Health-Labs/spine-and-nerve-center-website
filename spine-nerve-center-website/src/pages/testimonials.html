@@ -1,0 +1,394 @@
+---
+layout: default
+title: Patient Testimonials | Spine and Nerve Center Riverview
+description: Read what our patients say about their experience with Dr. Abraham J. Fura and the Spine and Nerve Center Riverview. Real reviews from real patients.
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+    .swiper-slide {
+        width: max-content !important;
+        margin-right: 28px;
+    }
+    .swiper-wrapper {
+        height: max-content;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+    }
+    .video-lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-lightbox.active {
+        display: flex;
+    }
+    .video-container {
+        position: relative;
+        width: 90%;
+        max-width: 1000px;
+        aspect-ratio: 16/9;
+    }
+    .close-lightbox {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 10000;
+    }
+</style>
+
+<section class="relative py-20 lg:py-24 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-500">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 40px 40px;"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">
+                Real Patients. Real Results.
+            </h1>
+            <p class="text-xl lg:text-2xl text-white/90 leading-relaxed">
+                Discover how Dr. Fura and our team have helped hundreds of patients find lasting relief from chronic pain. Read their stories and see why we're Riverview's trusted choice for pain management.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="text-secondary-400 font-medium mb-4 text-base uppercase tracking-[0.12em]">VIDEO TESTIMONIALS</p>
+            <h2 class="text-4xl lg:text-5xl font-bold text-primary-500">
+                Hear Success Stories From Our Patients
+            </h2>
+        </div>
+        
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-6">
+                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox('video1')">
+                    <div class="w-full lg:w-2/5 h-80 sm:h-96 lg:h-auto min-h-[400px] rounded-xl bg-cover bg-center flex-col justify-center items-center inline-flex relative" style="background-image: url('/assets/images/testimonials/patient1-poster.jpg');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="w-full h-full items-start justify-between flex flex-col p-6 relative z-10">
+                            <a href="javascript:void(0)" class="flex justify-center items-center w-full flex-1">
+                                <svg class="hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 57 56" fill="none">
+                                    <path d="M4.17789 17.3969C4.40281 13.9341 7.18691 11.2202 10.6528 11.0485C15.6717 10.7999 22.8451 10.5 28.25 10.5C33.6549 10.5 40.8283 10.7999 45.8472 11.0485C49.3131 11.2202 52.0972 13.9341 52.3221 17.3969C52.5376 20.7146 52.75 24.7969 52.75 28C52.75 31.2031 52.5376 35.2854 52.3221 38.6031C52.0972 42.0659 49.3131 44.7798 45.8472 44.9515C40.8283 45.2001 33.6549 45.5 28.25 45.5C22.8451 45.5 15.6717 45.2001 10.6528 44.9515C7.18691 44.7798 4.40281 42.0659 4.17789 38.6031C3.96239 35.2854 3.75 31.2031 3.75 28C3.75 24.7969 3.96239 20.7146 4.17789 17.3969Z" fill="#FC0D1B"/>
+                                    <path d="M23 21V35L37 28L23 21Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <h6 class="text-white text-lg font-medium leading-relaxed">Mary Johnson</h6>
+                                <p class="text-white text-sm font-normal leading-normal">Back Pain Recovery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-3/5 p-8 bg-white rounded-xl flex-col justify-between flex">
+                        <div class="flex justify-end mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M26.1942 42.4905V34.8145C26.1942 33.7735 27.0381 32.93 28.0792 32.93C31.7934 32.93 33.8138 29.1205 34.0938 21.6018H28.0792C27.0381 21.6018 26.1942 20.7575 26.1942 19.7169V3.50951C26.1942 2.46901 27.0381 1.62539 28.0792 1.62539H44.1155C45.1569 1.62539 46 2.46967 46 3.50951V19.7169C46 23.3212 45.6371 26.6288 44.9217 29.5488C44.188 32.5429 43.0617 35.1607 41.5751 37.3299C40.0455 39.5591 38.1321 41.3084 35.8877 42.5271C33.6281 43.7532 31.0005 44.375 28.0785 44.375C27.0381 44.375 26.1942 43.5315 26.1942 42.4905ZM1.88505 32.9299C0.844547 32.9299 0 33.7742 0 34.8144V42.4903C0 43.5314 0.844418 44.3749 1.88505 44.3749C4.80586 44.3749 7.43386 43.7529 9.69263 42.527C11.9374 41.3083 13.8519 39.559 15.3818 37.3297C16.8678 35.1606 17.9941 32.5426 18.728 29.5479C19.443 26.6269 19.8059 23.3194 19.8059 19.7167V3.50938C19.8059 2.46888 18.9617 1.62525 17.921 1.62525H1.88518C0.844681 1.62525 0.000919342 2.46954 0.000919342 3.50938V19.7169C0.000919342 20.7574 0.844551 21.6018 1.88518 21.6018H7.81404C7.53823 29.1204 5.54736 32.9299 1.88505 32.9299Z" fill="#E5E7EB"/>
+                            </svg>
+                        </div>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="flex-col justify-start items-start gap-2 flex pb-3.5 border-b border-gray-200">
+                                <h5 class="text-gray-900 text-xl font-medium leading-relaxed">Life-Changing Treatment</h5>
+                                <p class="text-gray-600 text-lg font-light leading-relaxed">"After years of chronic back pain, Dr. Fura's treatment plan gave me my life back. I can now play with my grandchildren pain-free."</p>
+                            </div>
+                            <div class="w-full pt-1 justify-end items-center gap-2.5 inline-flex">
+                                <h6 class="text-right text-gray-900 text-sm font-normal leading-normal">3 months post-treatment</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox('video2')">
+                    <div class="w-full lg:w-2/5 h-80 sm:h-96 lg:h-auto min-h-[400px] rounded-xl bg-cover bg-center flex-col justify-center items-center inline-flex relative" style="background-image: url('/assets/images/testimonials/patient2-poster.jpg');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="w-full h-full items-start justify-between flex flex-col p-6 relative z-10">
+                            <a href="javascript:void(0)" class="flex justify-center items-center w-full flex-1">
+                                <svg class="hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 57 56" fill="none">
+                                    <path d="M4.17789 17.3969C4.40281 13.9341 7.18691 11.2202 10.6528 11.0485C15.6717 10.7999 22.8451 10.5 28.25 10.5C33.6549 10.5 40.8283 10.7999 45.8472 11.0485C49.3131 11.2202 52.0972 13.9341 52.3221 17.3969C52.5376 20.7146 52.75 24.7969 52.75 28C52.75 31.2031 52.5376 35.2854 52.3221 38.6031C52.0972 42.0659 49.3131 44.7798 45.8472 44.9515C40.8283 45.2001 33.6549 45.5 28.25 45.5C22.8451 45.5 15.6717 45.2001 10.6528 44.9515C7.18691 44.7798 4.40281 42.0659 4.17789 38.6031C3.96239 35.2854 3.75 31.2031 3.75 28C3.75 24.7969 3.96239 20.7146 4.17789 17.3969Z" fill="#FC0D1B"/>
+                                    <path d="M23 21V35L37 28L23 21Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <div class="w-full flex-col justify-start items-start gap-1 flex">
+                                <h6 class="text-white text-lg font-medium leading-relaxed">Robert Smith</h6>
+                                <p class="text-white text-sm font-normal leading-normal">Nerve Pain Relief</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-3/5 p-8 bg-white rounded-xl flex-col justify-between flex">
+                        <div class="flex justify-end mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M26.1942 42.4905V34.8145C26.1942 33.7735 27.0381 32.93 28.0792 32.93C31.7934 32.93 33.8138 29.1205 34.0938 21.6018H28.0792C27.0381 21.6018 26.1942 20.7575 26.1942 19.7169V3.50951C26.1942 2.46901 27.0381 1.62539 28.0792 1.62539H44.1155C45.1569 1.62539 46 2.46967 46 3.50951V19.7169C46 23.3212 45.6371 26.6288 44.9217 29.5488C44.188 32.5429 43.0617 35.1607 41.5751 37.3299C40.0455 39.5591 38.1321 41.3084 35.8877 42.5271C33.6281 43.7532 31.0005 44.375 28.0785 44.375C27.0381 44.375 26.1942 43.5315 26.1942 42.4905ZM1.88505 32.9299C0.844547 32.9299 0 33.7742 0 34.8144V42.4903C0 43.5314 0.844418 44.3749 1.88505 44.3749C4.80586 44.3749 7.43386 43.7529 9.69263 42.527C11.9374 41.3083 13.8519 39.559 15.3818 37.3297C16.8678 35.1606 17.9941 32.5426 18.728 29.5479C19.443 26.6269 19.8059 23.3194 19.8059 19.7167V3.50938C19.8059 2.46888 18.9617 1.62525 17.921 1.62525H1.88518C0.844681 1.62525 0.000919342 2.46954 0.000919342 3.50938V19.7169C0.000919342 20.7574 0.844551 21.6018 1.88518 21.6018H7.81404C7.53823 29.1204 5.54736 32.9299 1.88505 32.9299Z" fill="#E5E7EB"/>
+                            </svg>
+                        </div>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="flex-col justify-start items-start gap-2 flex pb-3.5 border-b border-gray-200">
+                                <h5 class="text-gray-900 text-xl font-medium leading-relaxed">Back to Active Living</h5>
+                                <p class="text-gray-600 text-lg font-light leading-relaxed">"The minimally invasive procedures Dr. Fura performed helped me return to golf and all the activities I love. Outstanding care!"</p>
+                            </div>
+                            <div class="w-full pt-1 justify-end items-center gap-2.5 inline-flex">
+                                <h6 class="text-right text-gray-900 text-sm font-normal leading-normal">6 months post-treatment</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24 bg-white relative overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="text-secondary-400 font-medium mb-4 text-base uppercase tracking-[0.12em]">PATIENT REVIEWS</p>
+            <h2 class="text-4xl lg:text-5xl font-bold text-primary-500">
+                What Our Patients Say
+            </h2>
+        </div>
+    </div>
+    
+    <div class="relative">
+        <div class="swiper-container swiper--top mb-6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/google.svg" alt="Google" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Dr. Fura is amazing! He truly listens to your concerns and works with you to find the best treatment plan. The staff is friendly and professional. Highly recommend!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Google Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/healthgrades.svg" alt="Healthgrades" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"After years of back pain, I finally found relief with Dr. Fura. His expertise in pain management is exceptional, and the treatments have given me my life back."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Healthgrades</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/facebook.svg" alt="Facebook" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"The entire team at Spine and Nerve Center is wonderful. They make you feel comfortable and really care about helping you get better. Best decision I made!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Facebook Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="far fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/vitals.svg" alt="Vitals" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Dr. Fura explained everything clearly and gave me options for treatment. The procedures were minimally invasive and recovery was quick."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Vitals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container swiper--bottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="far fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/google.svg" alt="Google" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Great experience from start to finish. The office staff is efficient and the doctor really knows his stuff. Would definitely recommend."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Google Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/vitals.svg" alt="Vitals" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"I've been to many pain specialists, but Dr. Fura is by far the best. He found the root cause of my pain and treated it effectively."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Vitals</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/healthgrades.svg" alt="Healthgrades" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"The spinal injections I received have made such a difference. I'm sleeping better and can finally enjoy my daily walks again."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Healthgrades</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/facebook.svg" alt="Facebook" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"After my car accident, I was in constant pain. Dr. Fura and his team helped me recover completely. Forever grateful for their care!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Facebook Review</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <p class="text-secondary-400 font-medium mb-4 text-base uppercase tracking-[0.12em]">SHARE YOUR EXPERIENCE</p>
+            <h2 class="text-4xl lg:text-5xl font-bold text-primary-500 mb-6">
+                Leave Us a Review
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Your feedback helps us improve and helps other patients find the quality care they deserve. Choose your preferred platform to share your experience.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            <a href="#" target="_blank" class="group">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col items-center justify-center">
+                    <img src="/assets/images/logos/google.svg" alt="Google" class="h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <p class="text-gray-700 font-medium">Google</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="group">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col items-center justify-center">
+                    <img src="/assets/images/logos/facebook.svg" alt="Facebook" class="h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <p class="text-gray-700 font-medium">Facebook</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="group">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col items-center justify-center">
+                    <img src="/assets/images/logos/healthgrades.svg" alt="Healthgrades" class="h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <p class="text-gray-700 font-medium">Healthgrades</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="group">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col items-center justify-center">
+                    <img src="/assets/images/logos/vitals.svg" alt="Vitals" class="h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <p class="text-gray-700 font-medium">Vitals</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="group">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col items-center justify-center">
+                    <img src="/assets/images/logos/yelp.svg" alt="Yelp" class="h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <p class="text-gray-700 font-medium">Yelp</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-secondary-500 via-secondary-400 to-primary-500"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary-600/50 to-transparent"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-white">
+            Ready to Experience Pain Relief?
+        </h2>
+        <p class="text-xl lg:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
+            Join our many satisfied patients who have found lasting relief. Schedule your consultation with Dr. Fura today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/appointments.html" class="inline-flex items-center justify-center bg-white text-primary-600 px-10 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 text-xl">
+                REQUEST AN APPOINTMENT
+            </a>
+            <a href="tel:8137411071" class="inline-flex items-center justify-center bg-transparent text-white px-10 py-5 rounded-lg border-2 border-white hover:bg-white hover:text-primary-600 transition-all duration-200 font-semibold text-xl">
+                <i class="fas fa-phone mr-3"></i> CALL NOW
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="videoLightbox" class="video-lightbox">
+    <span class="close-lightbox" onclick="closeLightbox()">×</span>
+    <div class="video-container">
+        <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Top row carousel - moving right
+        new Swiper('.swiper--top', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 6000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+        });
+        
+        // Bottom row carousel - moving left (reverse)
+        new Swiper('.swiper--bottom', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 6000,
+            autoplay: {
+                delay: 1,
+                reverseDirection: true,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+        });
+    });
+
+    // Video Lightbox Functions
+    function openLightbox(videoId) {
+        const lightbox = document.getElementById('videoLightbox');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        // NOTE: Replace these placeholder URLs with your actual video URLs
+        const videoSources = {
+            'video1': 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
+            'video2': 'https://www.youtube.com/embed/o-YBDTqX_ZU?autoplay=1'
+        };
+
+        if (videoSources[videoId]) {
+            videoFrame.src = videoSources[videoId];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    
+    function closeLightbox() {
+        const lightbox = document.getElementById('videoLightbox');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        lightbox.classList.remove('active');
+        videoFrame.src = ''; // Stop the video by clearing the src
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Event listeners for closing the lightbox
+    document.querySelector('.close-lightbox').addEventListener('click', closeLightbox);
+    document.getElementById('videoLightbox').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+</script>

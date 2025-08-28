@@ -1,0 +1,239 @@
+---
+layout: default
+title: Patient Forms | Spine and Nerve Center Riverview
+description: Complete your patient forms online or download and print. Save time at your appointment with Dr. Abraham Fura at Spine and Nerve Center Riverview.
+---
+
+<style>
+    .tablink.active h4 {
+        color: #44B4D6;
+    }
+    .tablink.active svg, .tablink.active i {
+        color: #44B4D6;
+    }
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .accordion.active .accordion-content {
+        max-height: 500px; /* Increased height for longer content */
+    }
+    .accordion-toggle svg {
+        transition: transform 0.3s ease;
+    }
+    .accordion.active .accordion-toggle svg {
+        transform: rotate(180deg);
+    }
+</style>
+
+<section class="relative bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-500 text-white py-20 lg:py-28">
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-secondary-400/20 blur-3xl"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+                Patient Forms
+            </h1>
+            <p class="text-xl lg:text-2xl text-white/95 leading-relaxed">
+                Save time at your appointment by completing your forms in advance
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24">
+    <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="rounded-2xl relative group overflow-hidden">
+                <div class="relative z-0 w-full h-full min-h-[400px] rounded-2xl bg-gradient-to-br from-secondary-400 to-secondary-500 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fas fa-laptop-medical text-secondary-400 text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold text-3xl lg:text-4xl text-white mb-4">Complete Forms Digitally</h3>
+                        <p class="text-white/90 text-lg">Save time and complete your forms online through our secure patient portal.</p>
+                    </div>
+                    <a href="https://healow.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 rounded-full py-3 px-6 bg-white text-base font-semibold shadow-xs text-secondary-500 whitespace-nowrap transition-all duration-300 hover:bg-secondary-50 w-fit">
+                        Complete Forms Online
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl relative group overflow-hidden">
+                <div class="relative z-0 w-full h-full min-h-[400px] rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-6">
+                            <i class="fas fa-file-download text-primary-500 text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold text-3xl lg:text-4xl text-white mb-4">Download New Patient Packet</h3>
+                        <p class="text-white/90 text-lg">Download our PDF forms to complete by hand and bring to your appointment.</p>
+                    </div>
+                    <a href="/assets/forms/new-patient-packet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 rounded-full py-3 px-6 bg-white text-base font-semibold shadow-xs text-primary-500 whitespace-nowrap transition-all duration-300 hover:bg-primary-50 w-fit">
+                        Download PDF Forms
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 lg:py-24 bg-blue-50/30">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-6 md:p-10 lg:p-20">
+            <div class="w-full text-center lg:text-left mb-10 lg:mb-16">
+                <span class="text-secondary-400 text-lg font-semibold uppercase tracking-wider">COMMON QUESTIONS</span>
+                <h2 class="text-primary-500 text-5xl lg:text-6xl font-bold leading-tight mt-4">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="w-full flex flex-col md:flex-row gap-10 lg:gap-20">
+                <div class="w-full md:w-fit flex flex-row md:flex-col justify-center md:justify-start gap-4 md:gap-10 md:pr-10 lg:pr-20 md:border-r border-gray-200">
+                    <a href="javascript:void(0)" class="tablink active group" data-tab="general-tab" role="tab">
+                        <div class="flex items-center gap-2 pointer-events-none">
+                            <i class="fas fa-info-circle text-gray-500 group-hover:text-secondary-400 text-xl"></i>
+                            <h4 class="text-gray-500 group-hover:text-secondary-400 text-lg font-medium">General</h4>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="tablink group" data-tab="preop-tab" role="tab">
+                        <div class="flex items-center gap-2 pointer-events-none">
+                            <i class="fas fa-clipboard-check text-gray-500 group-hover:text-secondary-400 text-xl"></i>
+                            <h4 class="text-gray-500 group-hover:text-secondary-400 text-lg font-medium">Pre-Op</h4>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="tablink group" data-tab="postop-tab" role="tab">
+                        <div class="flex items-center gap-2 pointer-events-none">
+                            <i class="fas fa-user-nurse text-gray-500 group-hover:text-secondary-400 text-xl"></i>
+                            <h4 class="text-gray-500 group-hover:text-secondary-400 text-lg font-medium">Post-Op</h4>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="flex-1">
+                    <div id="general-tab" role="tabpanel" class="tabcontent">
+                        <div class="accordion-group flex flex-col gap-6">
+                            <div class="accordion active">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>Do I need a referral to schedule an appointment?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">No, you don't need a referral to schedule an appointment with Dr. Fura. However, some insurance plans may require a referral for coverage. We recommend checking with your insurance provider to understand your specific requirements.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>What insurance plans do you accept?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">We accept most major insurance plans including Medicare, Blue Cross Blue Shield, Aetna, Cigna, United Healthcare, and many others. Please contact our office at (813) 741-1071 to verify your specific insurance coverage.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>How long is the initial consultation?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">Your initial consultation typically takes 45-60 minutes. This allows Dr. Fura to thoroughly review your medical history, perform a comprehensive examination, and discuss treatment options tailored to your specific condition.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>What conditions do you treat?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">We specialize in treating chronic pain conditions including back and neck pain, sciatica, herniated discs, arthritis, neuropathy, fibromyalgia, and pain from personal injuries or accidents. Dr. Fura uses minimally-invasive techniques to provide effective pain relief.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="preop-tab" role="tabpanel" class="tabcontent" style="display: none;">
+                        <div class="accordion-group flex flex-col gap-6">
+                            <div class="accordion active">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>How should I prepare for my procedure?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">Prior to your procedure, you'll receive detailed instructions from our team. Generally, this includes fasting requirements, medication adjustments, and arranging transportation. We'll also review your medical history and answer any questions during your pre-procedure consultation.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>What medications should I stop before the procedure?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">Specific medication instructions vary by procedure and patient. Blood thinners may need to be stopped several days before. Never stop any medication without consulting Dr. Fura first. We'll provide personalized instructions based on your medications and procedure type.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="postop-tab" role="tabpanel" class="tabcontent" style="display: none;">
+                        <div class="accordion-group flex flex-col gap-6">
+                            <div class="accordion active">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>When can I return to normal activities?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">Most patients can resume light activities within 24 hours. We typically recommend avoiding strenuous activities for 24-48 hours. Return to work depends on your job requirements and the specific procedure. Dr. Fura will provide personalized activity guidelines.</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion-toggle group inline-flex gap-5 items-center justify-between text-gray-900 text-lg font-medium leading-relaxed w-full text-left">
+                                    <h5>How long will the pain relief last?</h5>
+                                    <svg class="transition duration-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 9L12 15L6 9" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                                <div class="accordion-content w-full px-0 overflow-hidden">
+                                    <p class="text-base font-normal text-gray-600 pt-3">Duration of pain relief varies by procedure type and individual response. Some procedures provide temporary relief lasting weeks to months, while others like radiofrequency ablation can provide relief for 6-12 months or longer. We'll discuss expected outcomes during your consultation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabLinks = document.querySelectorAll('.tablink');
+        const tabContents = document.querySelectorAll('.tabcontent');
+        
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetTab = this.getAttribute('data-tab');
+
+                tabLinks.forEach(tab => tab.classList.remove('active'));
+                tabContents.forEach(content => content.style.display = 'none');
+                
+                this.classList.add('active');
+                document.getElementById(targetTab).style.display = 'block';
+            });
+        });
+        
+        document.querySelectorAll('.accordion-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const accordion = this.closest('.accordion');
+                const accordionGroup = this.closest('.accordion-group');
+
+                // This logic closes other accordions in the same group
+                if (!accordion.classList.contains('active')) {
+                     accordionGroup.querySelectorAll('.accordion').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                }
+                
+                accordion.classList.toggle('active');
+            });
+        });
+    });
+</script>

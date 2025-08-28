@@ -1,21 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // UPDATE THIS SECTION
   content: [
-    "./*.html",
-    "./components/**/*.html",
-    "./assets/js/**/*.js"
+    './src/**/*.{html,js}',
   ],
   theme: {
+    // YOUR EXCELLENT THEME EXTENSIONS ARE PERFECT
     extend: {
       colors: {
-        // Updated to match landing page colors
         'primary': {
           50: '#e6f1f7',
           100: '#cce3ef',
           200: '#99c7df',
           300: '#66aacf',
           400: '#338ebf',
-          500: '#074163', // Main brand color
+          500: '#074163',
           600: '#063a59',
           700: '#05324f',
           800: '#042b45',
@@ -26,14 +25,14 @@ module.exports = {
           100: '#d1eff7',
           200: '#a3dfef',
           300: '#75cfe7',
-          400: '#44B4D6', // Bright blue
+          400: '#44B4D6',
           500: '#3ca0c2',
           600: '#348cae',
           700: '#2c789a',
           800: '#246486',
           900: '#1c5072',
         },
-        'accent': '#2EA043', // Green accent
+        'accent': '#2EA043',
         'text-dark': '#1A2E3B',
         'text-light': '#64748b',
         'border-light': '#e2e8f0',
@@ -54,5 +53,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // We will add a plugin in the next section
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
