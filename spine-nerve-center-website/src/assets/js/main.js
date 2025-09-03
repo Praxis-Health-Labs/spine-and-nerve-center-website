@@ -2,8 +2,6 @@
  * Main JavaScript for Spine and Nerve Center Riverview
  * Handles mobile menu, sticky header, smooth scrolling, Swiper carousels, and video modals
  */
-
-document.addEventListener('DOMContentLoaded', function() {
     
     // ==================================================
     // Mobile Menu Toggle
@@ -207,6 +205,114 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+     // ==================================================
+    // Video Sliders
+    // ==================================================
+
+
+   // src/assets/js/video-slider.js (new file)
+let videoLibrary = null;
+
+// Load video library once
+async function loadVideoLibrary() {
+    if (videoLibrary) return videoLibrary;
+    
+    try {
+        const response = await fetch('/assets/data/video-library.json');
+        const data = await response.json();
+        videoLibrary = data.videos;
+        return videoLibrary;
+    } catch (error) {
+        console.error('Failed to load video library:', error);
+        return {};
+    }
+}
+
+// Initialize all video sliders on the page
+async function initializeVideoSliders() {
+    const videos = await loadVideoLibrary();
+    const sliders = document.querySelectorAll('[data-video-ids]');
+    
+    sliders.forEach(slider => {
+        const videoIds = slider.getAttribute('data-video-ids').split(',').map(id => id.trim());
+        const swiperWrapper = slider.querySelector('.swiper-wrapper');
+        
+        // Clear loading placeholder
+        swiperWrapper.innerHTML = '';
+        
+        // Build slides from video IDs
+        videoIds.forEach(videoId => {
+            const video = videos[videoId];
+            if (video) {
+                const slide = createVideoSlide(video);
+                swiperWrapper.appendChild(slide);
+            } else {
+                console.warn(`Video not found: ${videoId}`);
+            }
+        });
+        
+        // Initialize Swiper
+        new Swiper(slider, {
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
+            breakpoints: {
+                0: { slidesPerView: 1.2, spaceBetween: 20 },
+                640: { slidesPerView: 2.2, spaceBetween: 20 },
+                1024: { slidesPerView: 3.5, spaceBetween: 30 },
+                1280: { slidesPerView: 3.5, spaceBetween: 50 }
+            }
+        });
+    });
+}
+
+function createVideoSlide(video) {
+    const slideDiv = document.createElement('div');
+    slideDiv.className = 'swiper-slide';
+    
+    slideDiv.innerHTML = `
+        <div class="bg-white/10 backdrop-blur rounded-2xl overflow-hidden">
+            <div class="relative">
+                <img class="w-full h-48 object-cover" 
+                     src="${video.thumbnail}" 
+                     alt="${video.title} - Educational video"
+                     loading="lazy" />
+                <a href="${video.detailPageUrl}" 
+                   class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/50 transition-colors group"
+                   aria-label="Watch ${video.title} video">
+                    <div class="p-3 rounded-full bg-white/90 backdrop-blur border-2 border-white shadow-xl hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 37" fill="none">
+                            <path d="M25.9808 13.9933C29.9808 16.3027 31.9808 17.4574 31.9808 19.1895C31.9808 20.9215 29.9808 22.0762 25.9808 24.3856L18 28.9933C14 31.3027 12 32.4574 10.5 31.5914C9 30.7254 9 28.416 9 23.7972L9 14.5818C9 9.96296 9 7.65356 10.5 6.78753C12 5.92151 14 7.07621 18 9.38561L25.9808 13.9933Z" 
+                                  class="fill-primary-500"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-3">${video.title}</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">${video.description}</p>
+                <a href="${video.detailPageUrl}" 
+                   class="text-secondary-400 font-medium hover:text-secondary-300 transition flex items-center text-sm group">
+                    <span>Learn More</span>
+                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" 
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    `;
+    
+    return slideDiv;
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', initializeVideoSliders);
+
     // ==================================================
     // Form Validation (if needed)
     // ==================================================
@@ -267,4 +373,4 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.warn('Swiper library not found - carousels will not work');
     }
-});
+;

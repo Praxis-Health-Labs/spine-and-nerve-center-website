@@ -1,41 +1,58 @@
 <header class="sticky top-0 left-0 right-0 bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg z-50 transition-all duration-300" id="main-header">
     <div class="container mx-auto px-4">
-        <nav class="flex items-center justify-between py-6">
+        <nav class="flex items-center justify-between py-3 lg:py-4">
+            <!-- Logo - Reduced size -->
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
-                    <img src="/assets/images/logos/sncr-white-logo.png" alt="Spine and Nerve Center Riverview" class="h-20 w-auto">
+                    <img src="/assets/images/logos/sncr-white-logo.png" alt="Spine and Nerve Center Riverview" class="h-12 lg:h-16 w-auto">
                 </a>
             </div>
             
-            <div class="hidden lg:flex items-center space-x-8 xl:space-x-10">
-                <a href="/about.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">ABOUT</a>
-                <a href="/conditions.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">CONDITIONS</a>
-                <a href="/treatments.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">TREATMENTS</a>
+            <!-- Desktop Navigation - Adjusted spacing and text size -->
+            <div class="hidden xl:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
+                <a href="/about.html" class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base">ABOUT</a>
+                <a href="/conditions.html" class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base">CONDITIONS</a>
+                <a href="/treatments.html" class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base">TREATMENTS</a>
+                
+                <!-- Your Visit Dropdown -->
                 <div class="relative group">
-                    <button class="text-white hover:text-secondary-400 transition font-medium text-lg flex items-center">
+                    <button class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base flex items-center">
                         YOUR VISIT <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
                     </button>
                     <div class="absolute top-full left-0 mt-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
                         <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
                             <div class="py-2">
-                                <a href="/new-patients.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium"><i class="fas fa-user-plus mr-3 text-secondary-400 w-4"></i> New Patients</a>
-                                <a href="/forms.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium"><i class="fas fa-file-medical mr-3 text-secondary-400 w-4"></i> Patient Forms</a>
-                                <a href="/insurance.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium"><i class="fas fa-shield-alt mr-3 text-secondary-400 w-4"></i> Insurance</a>
+                                <a href="/new-patients.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium text-sm">
+                                    <i class="fas fa-user-plus mr-3 text-secondary-400 w-4"></i> New Patients
+                                </a>
+                                <a href="/patient-forms.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium text-sm">
+                                    <i class="fas fa-file-medical mr-3 text-secondary-400 w-4"></i> Patient Forms
+                                </a>
+                                <a href="/insurance.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium text-sm">
+                                    <i class="fas fa-shield-alt mr-3 text-secondary-400 w-4"></i> Insurance
+                                </a>
                             </div>
                         </div>
                         <div class="absolute -top-2 left-8 w-4 h-4 bg-white transform rotate-45 border-l border-t border-gray-100"></div>
                     </div>
                 </div>
-                <a href="/testimonials.html" class="text-white hover:text-secondary-400 transition font-medium text-lg">TESTIMONIALS</a>
+                
+                <a href="/testimonials.html" class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base">TESTIMONIALS</a>
+                
+                <!-- Contact Dropdown -->
                 <div class="relative group">
-                    <button class="text-white hover:text-secondary-400 transition font-medium text-lg flex items-center">
+                    <button class="text-white hover:text-secondary-400 transition font-medium text-sm lg:text-base flex items-center">
                         CONTACT <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
                     </button>
                     <div class="absolute top-full left-0 mt-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top scale-95 group-hover:scale-100">
                         <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
                             <div class="py-2">
-                                <a href="/contact.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium"><i class="fas fa-envelope mr-3 text-secondary-400 w-4"></i> Contact Us</a>
-                                <a href="/location.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium"><i class="fas fa-map-marker-alt mr-3 text-secondary-400 w-4"></i> Location & Hours</a>
+                                <a href="/contact.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium text-sm">
+                                    <i class="fas fa-envelope mr-3 text-secondary-400 w-4"></i> Contact Us
+                                </a>
+                                <a href="/location-hours.html" class="block px-5 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-secondary-50 hover:to-secondary-100 hover:text-secondary-600 transition-all duration-200 font-medium text-sm">
+                                    <i class="fas fa-map-marker-alt mr-3 text-secondary-400 w-4"></i> Location & Hours
+                                </a>
                             </div>
                         </div>
                         <div class="absolute -top-2 left-8 w-4 h-4 bg-white transform rotate-45 border-l border-t border-gray-100"></div>
@@ -43,18 +60,20 @@
                 </div>
             </div>
 
-            <div class="hidden lg:flex items-center gap-4">
-                <a href="tel:8137411071" class="flex items-center justify-center w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200" aria-label="Call us">
-                    <i class="fas fa-phone text-white text-lg"></i>
+            <!-- CTA Buttons - Adjusted sizing -->
+            <div class="hidden xl:flex items-center gap-3">
+                <a href="tel:8137411071" class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200" aria-label="Call us">
+                    <i class="fas fa-phone text-white text-base"></i>
                 </a>
-                <a href="/appointments.html" class="bg-white text-primary-500 px-7 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-lg uppercase tracking-wide">
+                <a href="https://health.healow.com/sncr" class="bg-white text-primary-500 px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm uppercase tracking-wide">
                     Appointments
                 </a>
             </div>
             
-            <div class="flex lg:hidden items-center gap-3">
+            <!-- Mobile Menu Button - Shows earlier now (xl: breakpoint) -->
+            <div class="flex xl:hidden items-center gap-3">
                 <a href="tel:8137411071" class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200" aria-label="Call us">
-                    <i class="fas fa-phone text-white text-lg"></i>
+                    <i class="fas fa-phone text-white text-base"></i>
                 </a>
                 <button class="text-white" id="mobile-menu-button" aria-label="Menu">
                     <i class="fas fa-bars text-2xl"></i>
@@ -64,7 +83,8 @@
     </div>
 </header>
 
-<div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden">
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-50 xl:hidden">
     <div class="fixed inset-0 bg-black bg-opacity-50" id="mobile-menu-overlay"></div>
     <div class="fixed right-0 top-0 h-full w-80 bg-gradient-to-b from-primary-500 to-primary-600 shadow-xl overflow-y-auto">
         <div class="p-4 flex justify-between items-center border-b border-white/20">
@@ -73,6 +93,34 @@
                 <i class="fas fa-times text-2xl"></i>
             </button>
         </div>
-        <nav class="px-4 py-6"></nav>
+        <nav class="px-4 py-6">
+            <!-- Mobile menu items -->
+            <div class="space-y-4">
+                <a href="/about.html" class="block text-white hover:text-secondary-400 font-medium text-lg py-2">ABOUT</a>
+                <a href="/conditions.html" class="block text-white hover:text-secondary-400 font-medium text-lg py-2">CONDITIONS</a>
+                <a href="/treatments.html" class="block text-white hover:text-secondary-400 font-medium text-lg py-2">TREATMENTS</a>
+                
+                <div class="border-t border-white/20 pt-4">
+                    <p class="text-white/80 text-sm font-semibold mb-3">YOUR VISIT</p>
+                    <a href="/new-patients.html" class="block text-white hover:text-secondary-400 font-medium py-2 pl-4">New Patients</a>
+                    <a href="/patient-forms.html" class="block text-white hover:text-secondary-400 font-medium py-2 pl-4">Patient Forms</a>
+                    <a href="/insurance.html" class="block text-white hover:text-secondary-400 font-medium py-2 pl-4">Insurance</a>
+                </div>
+                
+                <a href="/testimonials.html" class="block text-white hover:text-secondary-400 font-medium text-lg py-2">TESTIMONIALS</a>
+                
+                <div class="border-t border-white/20 pt-4">
+                    <p class="text-white/80 text-sm font-semibold mb-3">CONTACT</p>
+                    <a href="/contact.html" class="block text-white hover:text-secondary-400 font-medium py-2 pl-4">Contact Us</a>
+                    <a href="/location-hours.html" class="block text-white hover:text-secondary-400 font-medium py-2 pl-4">Location & Hours</a>
+                </div>
+                
+                <div class="border-t border-white/20 pt-6">
+                    <a href="https://health.healow.com/sncr" class="block bg-white text-primary-500 px-6 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-center uppercase tracking-wide">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>

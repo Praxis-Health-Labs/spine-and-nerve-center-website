@@ -7,7 +7,6 @@ description: Read what our patients say about their experience with Dr. Abraham 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <style>
     .swiper-slide {
-        width: max-content !important;
         margin-right: 28px;
     }
     .swiper-wrapper {
@@ -16,35 +15,9 @@ description: Read what our patients say about their experience with Dr. Abraham 
         transition-timing-function: linear !important;
         position: relative;
     }
-    .video-lightbox {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.95);
-        z-index: 9999;
-        align-items: center;
-        justify-content: center;
-    }
-    .video-lightbox.active {
-        display: flex;
-    }
-    .video-container {
-        position: relative;
-        width: 90%;
-        max-width: 1000px;
-        aspect-ratio: 16/9;
-    }
-    .close-lightbox {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        color: white;
-        font-size: 40px;
-        cursor: pointer;
-        z-index: 10000;
+    /* Add this for the offset on the bottom carousel */
+    .swiper--bottom {
+        margin-top: 50px; /* Adjust this value as needed for your desired offset */
     }
 </style>
 
@@ -75,21 +48,12 @@ description: Read what our patients say about their experience with Dr. Abraham 
         
         <div class="max-w-6xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-6">
-                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox('video1')">
-                    <div class="w-full lg:w-2/5 h-80 sm:h-96 lg:h-auto min-h-[400px] rounded-xl bg-cover bg-center flex-col justify-center items-center inline-flex relative" style="background-image: url('/assets/images/testimonials/patient1-poster.jpg');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="w-full h-full items-start justify-between flex flex-col p-6 relative z-10">
-                            <a href="javascript:void(0)" class="flex justify-center items-center w-full flex-1">
-                                <svg class="hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 57 56" fill="none">
-                                    <path d="M4.17789 17.3969C4.40281 13.9341 7.18691 11.2202 10.6528 11.0485C15.6717 10.7999 22.8451 10.5 28.25 10.5C33.6549 10.5 40.8283 10.7999 45.8472 11.0485C49.3131 11.2202 52.0972 13.9341 52.3221 17.3969C52.5376 20.7146 52.75 24.7969 52.75 28C52.75 31.2031 52.5376 35.2854 52.3221 38.6031C52.0972 42.0659 49.3131 44.7798 45.8472 44.9515C40.8283 45.2001 33.6549 45.5 28.25 45.5C22.8451 45.5 15.6717 45.2001 10.6528 44.9515C7.18691 44.7798 4.40281 42.0659 4.17789 38.6031C3.96239 35.2854 3.75 31.2031 3.75 28C3.75 24.7969 3.96239 20.7146 4.17789 17.3969Z" fill="#FC0D1B"/>
-                                    <path d="M23 21V35L37 28L23 21Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <div class="w-full flex-col justify-start items-start gap-1 flex">
-                                <h6 class="text-white text-lg font-medium leading-relaxed">Mary Johnson</h6>
-                                <p class="text-white text-sm font-normal leading-normal">Back Pain Recovery</p>
-                            </div>
-                        </div>
+                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl">
+                    <div class="w-full lg:w-2/5">
+                        <video class="w-full h-full rounded-xl" controls poster="/assets/images/testimonials/patient-testimonial-1.jpg">
+                            <source src="https://doctorlibraries.s3.us-east-1.amazonaws.com/d111-abe-fura/patient1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="w-full lg:w-3/5 p-8 bg-white rounded-xl flex-col justify-between flex">
                         <div class="flex justify-end mb-4">
@@ -109,21 +73,12 @@ description: Read what our patients say about their experience with Dr. Abraham 
                     </div>
                 </div>
                 
-                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox('video2')">
-                    <div class="w-full lg:w-2/5 h-80 sm:h-96 lg:h-auto min-h-[400px] rounded-xl bg-cover bg-center flex-col justify-center items-center inline-flex relative" style="background-image: url('/assets/images/testimonials/patient2-poster.jpg');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="w-full h-full items-start justify-between flex flex-col p-6 relative z-10">
-                            <a href="javascript:void(0)" class="flex justify-center items-center w-full flex-1">
-                                <svg class="hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 57 56" fill="none">
-                                    <path d="M4.17789 17.3969C4.40281 13.9341 7.18691 11.2202 10.6528 11.0485C15.6717 10.7999 22.8451 10.5 28.25 10.5C33.6549 10.5 40.8283 10.7999 45.8472 11.0485C49.3131 11.2202 52.0972 13.9341 52.3221 17.3969C52.5376 20.7146 52.75 24.7969 52.75 28C52.75 31.2031 52.5376 35.2854 52.3221 38.6031C52.0972 42.0659 49.3131 44.7798 45.8472 44.9515C40.8283 45.2001 33.6549 45.5 28.25 45.5C22.8451 45.5 15.6717 45.2001 10.6528 44.9515C7.18691 44.7798 4.40281 42.0659 4.17789 38.6031C3.96239 35.2854 3.75 31.2031 3.75 28C3.75 24.7969 3.96239 20.7146 4.17789 17.3969Z" fill="#FC0D1B"/>
-                                    <path d="M23 21V35L37 28L23 21Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <div class="w-full flex-col justify-start items-start gap-1 flex">
-                                <h6 class="text-white text-lg font-medium leading-relaxed">Robert Smith</h6>
-                                <p class="text-white text-sm font-normal leading-normal">Nerve Pain Relief</p>
-                            </div>
-                        </div>
+                <div class="flex flex-col lg:flex-row gap-6 group relative overflow-hidden rounded-2xl">
+                     <div class="w-full lg:w-2/5">
+                        <video class="w-full h-full rounded-xl" controls poster="/assets/images/testimonials/patient-testimonial-2.jpg">
+                            <source src="https://doctorlibraries.s3.us-east-1.amazonaws.com/d111-abe-fura/patient2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="w-full lg:w-3/5 p-8 bg-white rounded-xl flex-col justify-between flex">
                         <div class="flex justify-end mb-4">
@@ -200,11 +155,91 @@ description: Read what our patients say about their experience with Dr. Abraham 
                         <div class="text-sm text-gray-500">Verified Patient • Vitals</div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/google.svg" alt="Google" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Dr. Fura is amazing! He truly listens to your concerns and works with you to find the best treatment plan. The staff is friendly and professional. Highly recommend!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Google Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/healthgrades.svg" alt="Healthgrades" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"After years of back pain, I finally found relief with Dr. Fura. His expertise in pain management is exceptional, and the treatments have given me my life back."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Healthgrades</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/facebook.svg" alt="Facebook" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"The entire team at Spine and Nerve Center is wonderful. They make you feel comfortable and really care about helping you get better. Best decision I made!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Facebook Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="far fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/vitals.svg" alt="Vitals" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Dr. Fura explained everything clearly and gave me options for treatment. The procedures were minimally invasive and recovery was quick."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Vitals</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="swiper-container swiper--bottom">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="far fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/google.svg" alt="Google" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"Great experience from start to finish. The office staff is efficient and the doctor really knows his stuff. Would definitely recommend."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Google Review</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/vitals.svg" alt="Vitals" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"I've been to many pain specialists, but Dr. Fura is by far the best. He found the root cause of my pain and treated it effectively."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Vitals</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/healthgrades.svg" alt="Healthgrades" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"The spinal injections I received have made such a difference. I'm sleeping better and can finally enjoy my daily walks again."</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Healthgrades</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i></div>
+                            <img src="/assets/images/logos/facebook.svg" alt="Facebook" class="h-6">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-6">"After my car accident, I was in constant pain. Dr. Fura and his team helped me recover completely. Forever grateful for their care!"</p>
+                        <div class="text-sm text-gray-500">Verified Patient • Facebook Review</div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
                     <div class="bg-white border border-gray-200 p-8 rounded-xl h-auto w-[400px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex gap-1"><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="far fa-star text-yellow-400"></i></div>
@@ -307,7 +342,7 @@ description: Read what our patients say about their experience with Dr. Abraham 
             Join our many satisfied patients who have found lasting relief. Schedule your consultation with Dr. Fura today.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/appointments.html" class="inline-flex items-center justify-center bg-white text-primary-600 px-10 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 text-xl">
+            <a href="https://health.healow.com/sncr" class="inline-flex items-center justify-center bg-white text-primary-600 px-10 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 text-xl">
                 REQUEST AN APPOINTMENT
             </a>
             <a href="tel:8137411071" class="inline-flex items-center justify-center bg-transparent text-white px-10 py-5 rounded-lg border-2 border-white hover:bg-white hover:text-primary-600 transition-all duration-200 font-semibold text-xl">
@@ -317,78 +352,53 @@ description: Read what our patients say about their experience with Dr. Abraham 
     </div>
 </section>
 
-<div id="videoLightbox" class="video-lightbox">
-    <span class="close-lightbox" onclick="closeLightbox()">×</span>
-    <div class="video-container">
-        <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Top row carousel - moving right
-        new Swiper('.swiper--top', {
-            spaceBetween: 0,
-            centeredSlides: true,
-            speed: 6000,
+        // Common Swiper configuration for both carousels
+        const swiperConfig = {
+            spaceBetween: 30, // Increased spacing between slides
+            speed: 5000, // Slower speed
             autoplay: {
                 delay: 1,
                 disableOnInteraction: false,
             },
             loop: true,
-            slidesPerView: 'auto',
+            slidesPerView: 1, // Default to 1 slide on small screens
             allowTouchMove: false,
+            breakpoints: {
+                // when window width is >= 640px (sm)
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 28
+                },
+                // when window width is >= 1024px (lg)
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 28
+                },
+                // when window width is >= 1280px (xl) - if you have such a breakpoint in Tailwind
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 28
+                }
+            }
+        };
+
+        // Top row carousel - moving right
+        new Swiper('.swiper--top', {
+            ...swiperConfig, // Use the common configuration
+            direction: 'horizontal', // Default, but good for clarity
         });
         
         // Bottom row carousel - moving left (reverse)
         new Swiper('.swiper--bottom', {
-            spaceBetween: 0,
-            centeredSlides: true,
-            speed: 6000,
+            ...swiperConfig, // Use the common configuration
             autoplay: {
-                delay: 1,
-                reverseDirection: true,
-                disableOnInteraction: false,
+                ...swiperConfig.autoplay, // Copy autoplay settings
+                reverseDirection: true, // Specific for bottom carousel
             },
-            loop: true,
-            slidesPerView: 'auto',
-            allowTouchMove: false,
+            direction: 'horizontal', // Default
         });
-    });
-
-    // Video Lightbox Functions
-    function openLightbox(videoId) {
-        const lightbox = document.getElementById('videoLightbox');
-        const videoFrame = document.getElementById('videoFrame');
-        
-        // NOTE: Replace these placeholder URLs with your actual video URLs
-        const videoSources = {
-            'video1': 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
-            'video2': 'https://www.youtube.com/embed/o-YBDTqX_ZU?autoplay=1'
-        };
-
-        if (videoSources[videoId]) {
-            videoFrame.src = videoSources[videoId];
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-    
-    function closeLightbox() {
-        const lightbox = document.getElementById('videoLightbox');
-        const videoFrame = document.getElementById('videoFrame');
-        
-        lightbox.classList.remove('active');
-        videoFrame.src = ''; // Stop the video by clearing the src
-        document.body.style.overflow = 'auto';
-    }
-    
-    // Event listeners for closing the lightbox
-    document.querySelector('.close-lightbox').addEventListener('click', closeLightbox);
-    document.getElementById('videoLightbox').addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeLightbox();
-        }
     });
 </script>

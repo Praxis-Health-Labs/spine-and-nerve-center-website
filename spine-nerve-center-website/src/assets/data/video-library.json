@@ -1,0 +1,524 @@
+{
+  "videos": {
+    "v01wibp": {
+      "id": "v01wibp",
+      "title": "Back Pain",
+      "description": "Back pain is one of the most common medical problems. This video provides a comprehensive overview of the potential causes, from muscle strains to disc issues, and your treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v01wibp/v01wibp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v01wibp.mp4",
+      "detailPageUrl": "/treatments/back-pain.html"
+    },
+    "v02wacfots": {
+      "id": "v02wacfots",
+      "title": "Compression Fractures of the Spine",
+      "description": "This video explains how compression fractures occur in the spine, often due to osteoporosis. Learn about the symptoms and minimally invasive treatment options like kyphoplasty.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v02wacfots/v02wacfots_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v02wacfots.mp4",
+      "detailPageUrl": "/treatments/compression-fractures-of-the-spine.html"
+    },
+    "v03waham": {
+      "id": "v03waham",
+      "title": "Headaches and Migraines",
+      "description": "Understand the difference between various types of headaches and migraines. This video covers common triggers, symptoms, and effective treatment strategies for relief.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v03waham/v03waham_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v03waham.mp4",
+      "detailPageUrl": "/treatments/headaches-and-migraines.html"
+    },
+    "v04wiahd": {
+      "id": "v04wiahd",
+      "title": "Herniated Disc",
+      "description": "Learn what happens when a spinal disc herniates or 'slips,' causing pain, numbness, or weakness. This video covers the causes, symptoms, and various treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v04wiahd/v04wiahd_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v04wiahd.mp4",
+      "detailPageUrl": "/treatments/herniated-disc.html"
+    },
+    "v05wiap": {
+      "id": "v05wiap",
+      "title": "Arthritis Pain",
+      "description": "Understand the different types of arthritis and how they cause joint pain and stiffness. This video provides an overview of effective strategies for managing arthritis symptoms.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v05wiap/v05wiap_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v05wiap.mp4",
+      "detailPageUrl": "/treatments/arthritis-pain.html"
+    },
+    "v06wicp": {
+      "id": "v06wicp",
+      "title": "Cancer Pain",
+      "description": "Managing pain is a critical part of cancer care. This video discusses the different causes of cancer-related pain and the various medical approaches used to provide relief.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v06wicp/v06wicp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v06wicp.mp4",
+      "detailPageUrl": "/treatments/cancer-pain.html"
+    },
+    "v07wicrps": {
+      "id": "v07wicrps",
+      "title": "Complex Regional Pain Syndrome",
+      "description": "Learn about Complex Regional Pain Syndrome (CRPS), a form of chronic pain that usually affects an arm or a leg. This video covers the symptoms and multidisciplinary treatment approach.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v07wicrps/v07wicrps_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v07wicrps.mp4",
+      "detailPageUrl": "/treatments/complex-regional-pain-syndrome.html"
+    },
+    "v08widdd": {
+      "id": "v08widdd",
+      "title": "Degenerative Disc Disease",
+      "description": "Understand degenerative disc disease, a common condition that occurs as spinal discs wear down with age. This video explores its symptoms and non-surgical treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v08widdd/v08widdd_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v08widdd.mp4",
+      "detailPageUrl": "/treatments/degenerative-disc-disease.html"
+    },
+    "v09wiipm": {
+      "id": "v09wiipm",
+      "title": "Interventional Pain Management",
+      "description": "Explore the field of interventional pain management, which focuses on diagnosing and treating pain disorders using minimally invasive procedures and targeted techniques.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v09wiipm/v09wiipm_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v09wiipm.mp4",
+      "detailPageUrl": "/treatments/interventional-pain-management.html"
+    },
+    "v10wijp": {
+      "id": "v10wijp",
+      "title": "Joint Pain",
+      "description": "Learn about the common causes of joint pain, from arthritis to injury, and explore various treatment options available to alleviate discomfort and improve mobility.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v10wijp/v10wijp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v10wijp.mp4",
+      "detailPageUrl": "/treatments/joint-pain.html"
+    },
+    "v11wikp": {
+      "id": "v11wikp",
+      "title": "Knee Pain",
+      "description": "From acute injuries to chronic conditions like arthritis, knee pain can be debilitating. Watch this video to learn about the common causes and available treatment solutions.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v11wikp/v11wikp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v11wikp.mp4",
+      "detailPageUrl": "/treatments/knee-pain.html"
+    },
+    "v12wilr": {
+      "id": "v12wilr",
+      "title": "Lumbar Radiculopathy",
+      "description": "Often referred to as a pinched nerve in the lower back, lumbar radiculopathy can cause pain, numbness, or weakness. Learn about its causes and how to find relief.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v12wilr/v12wilr_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v12wilr.mp4",
+      "detailPageUrl": "/treatments/lumbar-radiculopathy.html"
+    },
+    "v13winp": {
+      "id": "v13winp",
+      "title": "Neck Pain",
+      "description": "From muscle strain to worn joints, neck pain is a common complaint. This video explores the various causes and the range of treatments available to ease discomfort.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v13winp/v13winp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v13winp.mp4",
+      "detailPageUrl": "/treatments/neck-pain.html"
+    },
+    "v14wipp": {
+      "id": "v14wipp",
+      "title": "Pelvic Pain",
+      "description": "Chronic pelvic pain can have many causes. This video provides an overview of the potential sources of pelvic pain and the diagnostic and therapeutic approaches available.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v14wipp/v14wipp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v14wipp.mp4",
+      "detailPageUrl": "/treatments/pelvic-pain.html"
+    },
+    "v15wipn": {
+      "id": "v15wipn",
+      "title": "Peripheral Neuropathy",
+      "description": "Explore the causes and symptoms of peripheral neuropathy, a condition resulting from nerve damage. Learn about treatments that can help manage pain and improve quality of life.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v15wipn/v15wipn_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v15wipn.mp4",
+      "detailPageUrl": "/treatments/peripheral-neuropathy.html"
+    },
+    "v16wipls": {
+      "id": "v16wipls",
+      "title": "Post Laminectomy Syndrome",
+      "description": "Also known as failed back surgery syndrome, post laminectomy syndrome is persistent pain after back surgery. Learn about the potential causes and advanced treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v16wipls/v16wipls_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v16wipls.mp4",
+      "detailPageUrl": "/treatments/post-laminectomy-syndrome.html"
+    },
+    "v17wisjp": {
+      "id": "v17wisjp",
+      "title": "Sacroiliac Joint Pain",
+      "description": "Learn about the sacroiliac (SI) joint as a common source of lower back pain. This video explores the symptoms, causes, and diagnostic and treatment procedures for SI joint dysfunction.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v17wisjp/v17wisjp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v17wisjp.mp4",
+      "detailPageUrl": "/treatments/sacroiliac-joint-pain.html"
+    },
+    "v18wis": {
+      "id": "v18wis",
+      "title": "Sciatica",
+      "description": "Sciatica refers to pain that radiates along the path of the sciatic nerve. This video explains the common causes, such as a herniated disc, and how it can be effectively treated.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v18wis/v18wis_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v18wis.mp4",
+      "detailPageUrl": "/treatments/sciatica.html"
+    },
+    "v19wiss": {
+      "id": "v19wiss",
+      "title": "Spinal Stenosis",
+      "description": "This video explains spinal stenosis, the narrowing of spaces within your spine, which can put pressure on nerves. Learn about the symptoms and treatments to relieve this pressure.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v19wiss/v19wiss_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v19wiss.mp4",
+      "detailPageUrl": "/treatments/spinal-stenosis.html"
+    },
+    "v20wis": {
+      "id": "v20wis",
+      "title": "Spondylolisthesis",
+      "description": "Learn about spondylolisthesis, a spinal condition where one vertebra slips forward over the one below it. This video covers its causes, symptoms, and treatment approaches.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v20wis/v20wis_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v20wis.mp4",
+      "detailPageUrl": "/treatments/spondylolisthesis.html"
+    },
+    "v21witn": {
+      "id": "v21witn",
+      "title": "Trigeminal Neuralgia",
+      "description": "This video explains trigeminal neuralgia, a chronic pain condition affecting the trigeminal nerve in the face, causing severe, shock-like pain. Learn about available treatments.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v21witn/v21witn_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v21witn.mp4",
+      "detailPageUrl": "/treatments/trigeminal-neuralgia.html"
+    },
+    "v22widnp": {
+      "id": "v22widnp",
+      "title": "Diabetic Neuropathic Pain",
+      "description": "This video discusses diabetic neuropathy, a type of nerve damage that can occur with diabetes. Learn about managing symptoms like pain, tingling, and numbness.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v22widnp/v22widnp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v22widnp.mp4",
+      "detailPageUrl": "/treatments/diabetic-neuropathic-pain.html"
+    },
+    "v23wimps": {
+      "id": "v23wimps",
+      "title": "Myofascial Pain Syndrome",
+      "description": "Learn about myofascial pain syndrome, a chronic pain disorder caused by sensitivity and tightness in your tissues. This video discusses symptoms and trigger point therapies.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v23wimps/v23wimps_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v23wimps.mp4",
+      "detailPageUrl": "/treatments/myofascial-pain-syndrome.html"
+    },
+    "v24wion": {
+      "id": "v24wion",
+      "title": "Occipital Neuralgia",
+      "description": "Discover occipital neuralgia, a condition that causes piercing, throbbing pain in the upper neck and back of the head. Learn about its causes and treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v24wion/v24wion_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v24wion.mp4",
+      "detailPageUrl": "/treatments/occipital-neuralgia.html"
+    },
+    "v25wipn": {
+      "id": "v25wipn",
+      "title": "Postherpetic Neuralgia",
+      "description": "Learn about postherpetic neuralgia, a painful complication of shingles that affects nerve fibers and skin, causing burning pain that can last long after the rash disappears.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v25wipn/v25wipn_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v25wipn.mp4",
+      "detailPageUrl": "/treatments/postherpetic-neuralgia.html"
+    },
+    "v26wif": {
+      "id": "v26wif",
+      "title": "Fibromyalgia",
+      "description": "This video provides an overview of fibromyalgia, a complex disorder characterized by widespread musculoskeletal pain, fatigue, and sleep disturbances. Learn about management strategies.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v26wif/v26wif_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v26wif.mp4",
+      "detailPageUrl": "/treatments/fibromyalgia.html"
+    },
+    "v27wivp": {
+      "id": "v27wivp",
+      "title": "Vertebrogenic Pain",
+      "description": "Discover vertebrogenic pain, a type of chronic low back pain caused by damage to the vertebral endplates. This video explains diagnosis and modern treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v27wivp/v27wivp_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v27wivp.mp4",
+      "detailPageUrl": "/treatments/vertebrogenic-pain.html"
+    },
+    "v28wifjd": {
+      "id": "v28wifjd",
+      "title": "Facet Joint Dysfunction",
+      "description": "The facet joints in your spine can become painful due to arthritis or injury. Learn how facet joint dysfunction causes back and neck pain and how it is treated.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v28wifjd/v28wifjd_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v28wifjd.mp4",
+      "detailPageUrl": "/treatments/facet-joint-dysfunction.html"
+    },
+    "v29wabifcm": {
+      "id": "v29wabifcm",
+      "title": "Botox Injections for Chronic Migraines",
+      "description": "Discover how Botox injections can be an effective preventative treatment for chronic migraines by blocking neurotransmitters that carry pain signals.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v29wabifcm/v29wabifcm_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v29wabifcm.mp4",
+      "detailPageUrl": "/treatments/botox-injections-for-chronic-migraines.html"
+    },
+    "v30wanb": {
+      "id": "v30wanb",
+      "title": "Nerve Blocks",
+      "description": "This video explains how nerve blocks, the injection of medication near specific nerves, can be used to treat or diagnose pain by interrupting pain signals.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v30wanb/v30wanb_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v30wanb.mp4",
+      "detailPageUrl": "/treatments/nerve-block-injections.html"
+    },
+    "v31wasji": {
+      "id": "v31wasji",
+      "title": "Sacroiliac Joint Injections",
+      "description": "Learn how sacroiliac joint injections deliver anesthetic and steroid medication to relieve pain and inflammation, and also to help diagnose the source of your discomfort.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v31wasji/v31wasji_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v31wasji.mp4",
+      "detailPageUrl": "/treatments/sacroiliac-joint-injections.html"
+    },
+    "v32wiambb": {
+      "id": "v32wiambb",
+      "title": "Medial Branch Block",
+      "description": "A medial branch block is a diagnostic procedure to determine if your facet joints are the source of your pain. This video explains how the procedure works.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v32wiambb/v32wiambb_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v32wiambb.mp4",
+      "detailPageUrl": "/treatments/medial-branch-block.html"
+    },
+    "v33wiaesi": {
+      "id": "v33wiaesi",
+      "title": "Epidural Steroid Injection",
+      "description": "Learn about epidural steroid injections, a common treatment used to relieve inflammation and pain caused by conditions like herniated discs and spinal stenosis.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v33wiaesi/v33wiaesi_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v33wiaesi.mp4",
+      "detailPageUrl": "/treatments/epidural-steroid-injection.html"
+    },
+    "v34widrgst": {
+      "id": "v34widrgst",
+      "title": "Dorsal Root Ganglion Stimulation Therapy",
+      "description": "Explore Dorsal Root Ganglion (DRG) stimulation, a targeted therapy for chronic pain in specific areas of the body, such as the foot or groin, that hasn't responded to other treatments.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v34widrgst/v34widrgst_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v34widrgst.mp4",
+      "detailPageUrl": "/treatments/dorsal-root-ganglion-stimulation-therapy.html"
+    },
+    "v35wiipt": {
+      "id": "v35wiipt",
+      "title": "Intrathecal Pump Therapy",
+      "description": "Discover intrathecal pump therapy, where a small pump is surgically placed to deliver medication directly to the spinal cord, providing relief for severe chronic pain.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v35wiipt/v35wiipt_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v35wiipt.mp4",
+      "detailPageUrl": "/treatments/intrathecal-pump-therapy.html"
+    },
+    "v36wimm": {
+      "id": "v36wimm",
+      "title": "Medication Management",
+      "description": "Effective medication management is key to treating chronic pain. This video discusses a balanced approach to using medications safely and effectively to improve your quality of life.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v36wimm/v36wimm_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v36wimm.mp4",
+      "detailPageUrl": "/treatments/medication-management.html"
+    },
+    "v37wimisf": {
+      "id": "v37wimisf",
+      "title": "Minimally Invasive Spinal Fusion",
+      "description": "Discover the benefits of minimally invasive spinal fusion, a surgical technique that stabilizes the spine with less disruption to surrounding tissues, leading to a faster recovery.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v37wimisf/v37wimisf_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v37wimisf.mp4",
+      "detailPageUrl": "/treatments/minimally-invasive-spinal-fusion.html"
+    },
+    "v38wipns": {
+      "id": "v38wipns",
+      "title": "Peripheral Nerve Stimulation",
+      "description": "Discover how peripheral nerve stimulation (PNS) works by placing a small electrode near a specific nerve to deliver electrical pulses that block pain signals.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v38wipns/v38wipns_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v38wipns.mp4",
+      "detailPageUrl": "/treatments/peripheral-nerve-stimulation.html"
+    },
+    "v39wipt": {
+      "id": "v39wipt",
+      "title": "Physical Therapy",
+      "description": "Discover the crucial role of physical therapy in recovery and pain management. This video highlights exercises and techniques used to restore function, strength, and movement.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v39wipt/v39wipt_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v39wipt.mp4",
+      "detailPageUrl": "/treatments/physical-therapy.html"
+    },
+    "v40wira": {
+      "id": "v40wira",
+      "title": "Radiofrequency Ablation",
+      "description": "Discover radiofrequency ablation, a procedure that uses an electrical current to heat up and disrupt nerve function, thereby interrupting pain signals for long-lasting relief.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v40wira/v40wira_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v40wira.mp4",
+      "detailPageUrl": "/treatments/radiofrequency-ablation.html"
+    },
+    "v41wisjf": {
+      "id": "v41wisjf",
+      "title": "Sacroiliac Joint Fusion",
+      "description": "Explore sacroiliac (SI) joint fusion, a minimally invasive procedure designed to stabilize the SI joint and relieve chronic lower back pain. Learn how it works and who is a candidate.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v41wisjf/v41wisjf_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v41wisjf.mp4",
+      "detailPageUrl": "/treatments/sacroiliac-joint-fusion.html"
+    },
+    "v42wiscsi": {
+      "id": "v42wiscsi",
+      "title": "Spinal Cord Stimulator Implantation",
+      "description": "This video explains how a spinal cord stimulator works to interrupt pain signals before they reach the brain, offering significant relief for chronic pain sufferers.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v42wiscsi/v42wiscsi_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v42wiscsi.mp4",
+      "detailPageUrl": "/treatments/spinal-cord-stimulator-implantation.html"
+    },
+    "v43wiva": {
+      "id": "v43wiva",
+      "title": "Vertebral Augmentation",
+      "description": "Learn about vertebral augmentation procedures, such as vertebroplasty and kyphoplasty, which are minimally invasive treatments used to stabilize spinal compression fractures.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v43wiva/v43wiva_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v43wiva.mp4",
+      "detailPageUrl": "/treatments/vertebral-augmentation.html"
+    },
+    "v48waprpi": {
+      "id": "v48waprpi",
+      "title": "Platelet-Rich Plasma (PRP) Injections",
+      "description": "This video explains how Platelet-Rich Plasma (PRP) therapy uses a concentration of your own platelets to accelerate the healing of injured tendons, ligaments, muscles, and joints.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v48waprpi/v48waprpi_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v48waprpi.mp4",
+      "detailPageUrl": "/treatments/platelet-rich-plasma-injections.html"
+    },
+    "v49wiasnrb": {
+      "id": "v49wiasnrb",
+      "title": "Selective Nerve Root Block (SNRB)",
+      "description": "Discover how a selective nerve root block is used both to diagnose the source of nerve pain and to provide therapeutic relief by delivering medication directly to the affected nerve.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v49wiasnrb/v49wiasnrb_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v49wiasnrb.mp4",
+      "detailPageUrl": "/treatments/selective-nerve-root-block-(snrb).html"
+    },
+    "v50wiacpb": {
+      "id": "v50wiacpb",
+      "title": "Celiac Plexus Block",
+      "description": "This video explains the celiac plexus block, an injection procedure used to manage pain originating from the abdomen, often associated with cancer or pancreatitis.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v50wiacpb/v50wiacpb_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v50wiacpb.mp4",
+      "detailPageUrl": "/treatments/celiac-plexus-block.html"
+    },
+    "v51wimild": {
+      "id": "v51wimild",
+      "title": "Minimally Invasive Lumbar Decompression (MILD)",
+      "description": "The MILD procedure is a safe, effective outpatient treatment for lumbar spinal stenosis. Learn how it removes excess ligament tissue to restore space in the spinal canal.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v51wimild/v51wimild_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v51wimild.mp4",
+      "detailPageUrl": "/treatments/minimally-invasive-lumbar-decompression.html"
+    },
+    "v52wibna": {
+      "id": "v52wibna",
+      "title": "Basivertebral Nerve Ablation",
+      "description": "Explore basivertebral nerve ablation, an innovative procedure that targets the nerve responsible for vertebrogenic low back pain, offering a durable, implant-free solution.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v52wibna/v52wibna_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v52wibna.mp4",
+      "detailPageUrl": "/treatments/basivertebral-nerve-ablation.html"
+    },
+    "v53watpi": {
+      "id": "v53watpi",
+      "title": "Trigger Point Injections",
+      "description": "Learn about trigger point injections, a procedure used to treat painful areas of muscle that contain trigger points, or knots of muscle that form when muscles do not relax.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v53watpi/v53watpi_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v53watpi.mp4",
+      "detailPageUrl": "/treatments/trigger-point-injections.html"
+    },
+    "v54witens": {
+      "id": "v54witens",
+      "title": "Transcutaneous Electrical Nerve Stimulation (TENS)",
+      "description": "Learn how a TENS unit uses low-voltage electrical currents to provide pain relief. This video explains how the therapy works and its common applications for various pain conditions.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v54witens/v54witens_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v54witens.mp4",
+      "detailPageUrl": "/treatments/transcutaneous-electrical-nerve-stimulation.html"
+    },
+    "v55wirn": {
+      "id": "v55wirn",
+      "title": "Regenerative Medicine",
+      "description": "Explore the exciting field of regenerative medicine, including treatments like PRP and stem cell therapy, which aim to harness the body's own healing ability to repair damaged tissues.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v55wirn/v55wirn_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v55wirn.mp4",
+      "detailPageUrl": "/regenerative-medicine.html"
+    },
+    "v57wik": {
+      "id": "v57wik",
+      "title": "Kyphoplasty",
+      "description": "This video explains kyphoplasty, a minimally invasive procedure that treats spinal compression fractures by stabilizing the bone and restoring vertebral height, which can relieve pain.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v57wik/v57wik_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v57wik.mp4",
+      "detailPageUrl": "/treatments/kyphoplasty.html"
+    },
+    "v58wiascst": {
+      "id": "v58wiascst",
+      "title": "Spinal Cord Stimulation Trial",
+      "description": "Before a permanent implant, a trial is performed to see if spinal cord stimulation is effective for your pain. This video explains the trial process and what to expect.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v58wiascst/v58wiascst_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v58wiascst.mp4",
+      "detailPageUrl": "/treatments/spinal-cord-stimulation-trial.html"
+    },
+    "v59wafji": {
+      "id": "v59wafji",
+      "title": "Facet Joint Injections",
+      "description": "This video describes how facet joint injections can diagnose and treat pain arising from the small joints along your spine, reducing inflammation and discomfort.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v59wafji/v59wafji_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v59wafji.mp4",
+      "detailPageUrl": "/treatments/facet-joint-injections.html"
+    },
+    "v60waji": {
+      "id": "v60waji",
+      "title": "Joint Injections",
+      "description": "This video explains how targeted joint injections can help reduce inflammation and pain. Discover the different types of injections and what to expect during the procedure.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v60waji/v60waji_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v60waji.mp4",
+      "detailPageUrl": "/treatments/joint-injections.html"
+    },
+    "v173": {
+      "id": "v173",
+      "title": "What is Regenerative Medicine?",
+      "description": "Dive into the field of regenerative medicine, a groundbreaking area of science that focuses on harnessing the body's natural healing powers to repair, replace, and rejuvenate damaged tissues and organs.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v173/v173_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v173.mp4",
+      "detailPageUrl": "/treatments/regenerative-medicine.html"
+    },
+    "v177": {
+      "id": "v177",
+      "title": "What is Elbow Bursitis?",
+      "description": "Elbow bursitis, or olecranon bursitis, is the inflammation of the bursa at the tip of the elbow. Learn about the causes, such as trauma or prolonged pressure, and how this 'Popeye elbow' is treated.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v177/v177_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v177.mp4",
+      "detailPageUrl": "/treatments/elbow-bursitis.html"
+    },
+    "v178": {
+      "id": "v178",
+      "title": "What is Tennis Elbow?",
+      "description": "Understand Tennis Elbow, or lateral epicondylitis, a painful condition caused by overuse of the forearm muscles. This video explains the symptoms and the various treatments available to relieve the pain.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v178/v178_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v178.mp4",
+      "detailPageUrl": "/treatments/tennis-elbow.html"
+    },
+    "v179": {
+      "id": "v179",
+      "title": "What is Golfer's Elbow?",
+      "description": "Also known as medial epicondylitis, Golfer's Elbow is a condition that causes pain where the tendons of your forearm muscles attach to the bony bump on the inside of your elbow. Learn about its causes and treatments.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v179/v179_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v179.mp4",
+      "detailPageUrl": "/treatments/golfers-elbow.html"
+    },
+    "v180": {
+      "id": "v180",
+      "title": "What is Knee Osteoarthritis?",
+      "description": "This video explains knee osteoarthritis, a degenerative 'wear-and-tear' condition where the cartilage in the knee joint wears down, causing pain, stiffness, and swelling. Discover the symptoms and treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v180/v180_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v180.mp4",
+      "detailPageUrl": "/treatments/knee-osteoarthritis.html"
+    },
+    "v181": {
+      "id": "v181",
+      "title": "What is Spinal Arthritis?",
+      "description": "This video covers spinal arthritis, the inflammation of the facet joints in the spine or the sacroiliac joints. Understand the causes of pain and stiffness in the neck and back, and the available treatment strategies.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v181/v181_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v181.mp4",
+      "detailPageUrl": "/treatments/spinal-arthritis.html"
+    },
+    "v183": {
+      "id": "v183",
+      "title": "What is a Bulging Disc?",
+      "description": "Learn the difference between a bulging and herniated disc. This video explains how a spinal disc can bulge and press on nearby nerves, causing pain, and explores the non-surgical ways to manage this common condition.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v183/v183_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v183.mp4",
+      "detailPageUrl": "/treatments/bulging-disc.html"
+    },
+    "v192": {
+      "id": "v192",
+      "title": "What is Carpal Tunnel Syndrome?",
+      "description": "This video explains carpal tunnel syndrome, a common condition that causes numbness, tingling, and pain in the hand and forearm due to a compressed nerve in your wrist. Discover the symptoms, causes, and treatment options.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v192/v192_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v192.mp4",
+      "detailPageUrl": "/treatments/carpal-tunnel-syndrome.html"
+    },
+    "v193": {
+      "id": "v193",
+      "title": "What is Achilles Tendinopathy?",
+      "description": "Explore Achilles tendinopathy, an overuse injury of the Achilles tendon that connects your calf muscles to your heel bone. Learn about the causes, symptoms like pain and stiffness, and effective treatments.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v193/v193_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v193.mp4",
+      "detailPageUrl": "/treatments/achilles-tendinopathy.html"
+    },
+    "v206": {
+      "id": "v206",
+      "title": "What is Extracorporeal Shock Wave Therapy?",
+      "description": "Learn about Extracorporeal Shock Wave Therapy (ESWT), a non-invasive treatment that uses acoustic waves to promote healing in painful musculoskeletal conditions like plantar fasciitis and tendinitis.",
+      "thumbnail": "https://ondocprivate.s3.amazonaws.com/v206/v206_default_thumbnail.jpg",
+      "videoUrl": "https://doctorlibraries.s3.amazonaws.com/d111-abe-fura/v206.mp4",
+      "detailPageUrl": "/treatments/shockwave.html"
+    }
+  }
+}
